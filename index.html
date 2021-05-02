@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>API Países</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    
+</head>
+<body>
+	<nav class="navbar">
+		<div class="container navbar-content">
+			<h1>Mundo - Mundial</h1>
+			<button class="btn-dark-mode">
+				<i class="fas fa-moon"></i>
+				Modo oscuro
+			</button>
+		</div>
+	</nav>
+
+	<header class="container filter-content my-2">
+		<form class= "form-search" id="formulario">
+			<i class="fas fa-search"></i>
+			<input type="text" placeholder="Busca un país" id="inputFormulario">
+		</form>
+		<div class="custom-select">
+			<select id="filtroSelect">
+				<option value="">Selec. continente</option>
+				<option value="">Todos</option>
+				<option value="Africa">Africa</option>
+				<option value="Americas">América</option>
+				<option value="Asia">Asia</option>
+				<option value="Europe">Europa</option>
+				<option value="Oceania">Oceanía</option>
+			</select>
+		</div>
+	</header>
+
+	<main class="container grid" id="banderas">
+		
+		<article class="card">
+		    <img src="https://restcountries.eu/data/ala.svg" alt="" class="img-fluid">
+		    <div class="card-content">
+		    	<h3>Alemania</h3>
+		    	<p>
+		    		<b>Población: </b>
+		    		81.256.254
+		    	</p>
+		    	<p>
+		    		<b>Continente: </b>
+		    		Europa
+		    	</p>
+		    	<p>
+		    		<b>Capital: </b>
+		    		Berlín
+		    	</p>
+		    </div>
+		</article>
+
+	</main>
+
+	<script src="js/modoDark.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/estilos2.js"></script>
+	<script src="js/formulario.js"></script>
+	
+</body>
+</html>
